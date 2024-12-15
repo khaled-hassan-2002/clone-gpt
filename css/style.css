@@ -46,7 +46,6 @@ body.hide-header .header {
 }
 
 .suggestion-list {
-    list-style: none;
     scrollbar-width: none;
 }
 
