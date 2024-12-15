@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gemini clone</title>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="header p-4 mt-5">
+            <h2 class="title fw-semibold fs-1 ">Hello , there</h2>
+            <h4 class="subtitle fw-semibold">How can i help you today?</h4>
+            <ul class="suggestion-list d-flex ps-0 mt-5 overflow-auto gap-3">
+                <li
+                    class="suggestion p-3 w-25 rounded-4 d-flex flex-column align-items-end">
+                    <h4 class="text fw-normal">Help me plan a game night with my
+                        5 best
+                        friends for under 100$</h4>
+                    <span
+                        class="icon material-symbols-rounded d-flex align-items-center justify-content-center rounded-circle mt-5 fs-5 ">
+                        draw
+                    </span>
+                </li>
+                <li
+                    class="suggestion p-3 w-25 rounded-4 d-flex flex-column align-items-end">
+                    <h4 class="text fw-normal">What are the best tips to improve
+                        my public
+                        speaking skills?</h4>
+                    <span
+                        class="icon material-symbols-rounded d-flex align-items-center justify-content-center rounded-circle mt-5 fs-5 ">
+                        lightbulb
+                    </span>
+                </li>
+                <li
+                    class="suggestion p-3 w-25 rounded-4 d-flex flex-column align-items-end">
+                    <h4 class="text fw-normal">Can you help me the latest news
+                        on web
+                        development?</h4>
+                    <span
+                        class="icon material-symbols-rounded d-flex align-items-center justify-content-center rounded-circle mt-5 fs-5 ">
+                        explore
+                    </span>
+                </li>
+                <li
+                    class="suggestion p-3 w-25 rounded-4 d-flex flex-column align-items-end">
+                    <h4 class="text fw-normal">Write javascript code to sum all
+                        elementsin
+                        an array.</h4>
+                    <span
+                        class="icon material-symbols-rounded d-flex align-items-center justify-content-center rounded-circle mt-5 fs-5 ">
+                        code
+                    </span>
+                </li>
+            </ul>
+        </header>
+        <div class="chat-list pt-4 pb-5 px-3">
+        </div>
+        <div class="typing-area fixed-bottom w-100">
+            <form action class="typing d-flex gap-3">
+                <div class="input-wrapper w-100 d-flex position-relative">
+                    <input type="text" placeholder="Enter prompt here" required
+                        class="w-100 h-100 border-0 rounded-5 fs-6"
+                        id="message">
+                    <button id="send"
+                        class="icon send material-symbols-rounded d-flex align-items-center justify-content-center rounded-circle position-absolute end-0 border-0 ">send</button>
+                </div>
+                <div class="action d-flex gap-3">
+                    <span id="toggle_them"
+                        class="icon material-symbols-rounded d-flex align-items-center justify-content-center rounded-circle border-0">light_mode</span>
+                    <span id="delet"
+                        class="icon material-symbols-rounded d-flex align-items-center justify-content-center rounded-circle border-0">delete</span>
+                </div>
+            </form>
+        </div>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
